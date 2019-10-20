@@ -1,0 +1,2 @@
+[2019-10-19 21:42:28.589] [renderer1] [error] Error: [File Watcher (node.js)] Failed to watch /etc/netctl/wlo1-NETIASPOT-AC8D90 for changes using fs.watch() (Error: EACCES: permission denied, watch '/etc/netctl/wlo1-NETIASPOT-AC8D90')
+[2019-10-19 21:42:28.590] [renderer1] [error] [File Watcher (node.js)] Failed to watch /etc/netctl/wlo1-NETIASPOT-AC8D90 for changes using fs.watch() (Error: EACCES: permission denied, watch '/etc/netctl/wlo1-NETIASPOT-AC8D90')

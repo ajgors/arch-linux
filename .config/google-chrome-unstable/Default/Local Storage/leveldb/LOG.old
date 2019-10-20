@@ -1,0 +1,15 @@
+2019/10/20-15:26:09.628 82c Reusing MANIFEST /home/igor/.config/google-chrome-unstable/Default/Local Storage/leveldb/MANIFEST-000001
+2019/10/20-15:26:09.628 82c Recovering log #206
+2019/10/20-15:26:09.629 82c Reusing old log /home/igor/.config/google-chrome-unstable/Default/Local Storage/leveldb/000206.log 
+2019/10/20-15:27:11.373 949 Level-0 table #210: started
+2019/10/20-15:27:11.376 949 Level-0 table #210: 14313 bytes OK
+2019/10/20-15:27:11.384 949 Delete type=0 #206
+2019/10/20-15:27:11.384 949 Compacting 4@0 + 1@1 files
+2019/10/20-15:27:11.419 949 Generated table #211@0: 1538 keys, 835310 bytes
+2019/10/20-15:27:11.419 949 Compacted 4@0 + 1@1 files => 835310 bytes
+2019/10/20-15:27:11.422 949 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/10/20-15:27:11.422 949 Delete type=2 #203
+2019/10/20-15:27:11.422 949 Delete type=2 #205
+2019/10/20-15:27:11.422 949 Delete type=2 #210
+2019/10/20-15:27:11.422 949 Delete type=2 #201
+2019/10/20-15:27:11.422 949 Delete type=2 #207

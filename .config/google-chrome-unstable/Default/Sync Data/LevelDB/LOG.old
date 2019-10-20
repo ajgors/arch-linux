@@ -1,0 +1,6 @@
+2019/10/20-15:26:08.575 75e Reusing MANIFEST /home/igor/.config/google-chrome-unstable/Default/Sync Data/LevelDB/MANIFEST-000001
+2019/10/20-15:26:08.576 75e Recovering log #117
+2019/10/20-15:26:08.577 75e Reusing old log /home/igor/.config/google-chrome-unstable/Default/Sync Data/LevelDB/000117.log 
+2019/10/20-15:45:16.010 d98 Level-0 table #122: started
+2019/10/20-15:45:16.041 d98 Level-0 table #122: 112272 bytes OK
+2019/10/20-15:45:16.045 d98 Delete type=0 #117
