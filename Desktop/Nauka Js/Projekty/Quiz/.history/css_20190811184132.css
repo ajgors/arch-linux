@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header__title{
+    text-align: center;
+    margin:  40px auto;
+    font-size: 3.5em;
+}
+
+.result{
+    background-color: #eee;
+}
+.result__paragraph{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    font-size: 1.2em
+}
+.result__span{
+    font-size: 2.4em;
+    padding: 15px;
+    color:#3b83bd;
+}
+
+.quiz{
+    background-color: #3b83bd;
+    padding-left: 
+}
+.quiz-form{
+    padding: 40px;
+    margin: 40px;
+}
+
+.question{
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-top: 30px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <meta http-equiv=X-UA-Compatible content=ie=edge>
+    <title>Document</title>
+    <link rel=stylesheet href=styles.css>
+    <style>
+    .tooltip{
+    position: relative;
+    display: inline-block;
+    color: #ff6565;
+    border-bottom: 1px dotted #ff6565;
+    cursor: help;
+  }
+  .tip{
+    visibility: hidden;
+    width: 150px;
+    background-color: #ff6565;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .tip.active{
+    visibility: visible;
+    opacity: 1;
+  }
+  .tip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #ff6565;
+  }
+    </style>
+
+</head>
+<body>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nobis voluptatum quo? Est, <span class="tooltip" message="I'm a message"> ipsma voluptate.</span> Exercitationem modi sunt omnis illum voluptatem! Provident aperiam animi necessitatibus veritatis inventore. Nulla, quam voluptas?</p>
+
+
+    <script src=javascript.js></script>
+
+    <script>
+    class Tooltip{
+        constructor(element){
+            this.element = element;
+            this.message = element.getAttribute('data-message')
+        }
+        init(){
+            const container = document.createElement('div');
+            container.classList.add('tip')
+            container.textContent = this.message;
+            this.element.appendChild(container);
+
+            this.element.addEventListener('mouseenter', ()=>{
+                container.classList.add('active');
+            })
+            this.element.addEventListener('mouseleave', ()=>{
+                container.classList.remove('active')
+            })
+        }
+    }
+    
+    const tooltip = new Tooltip(document.querySelector('.tooltip'))
+    tooltip.init()
+    </script>
+</body>
+</html>

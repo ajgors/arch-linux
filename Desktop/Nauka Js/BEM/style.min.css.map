@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAE,CAAC,AAAA,QAAQ,CAAE,CAAC,AAAA,OAAO,AAAA,CAClB,UAAU,CAAE,UAAU,CACtB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,sBAAsB,CAAE,WAAW,CACnC,uBAAuB,CAAE,SAAS,CACrC,AEND,AAAA,OAAO,AAAA,CACH,gBAAgB,CHDJ,IAAI,CGEhB,KAAK,CHDI,IAAI,CGEhB",
+    "sources": [
+        "style.scss",
+        "components/_variables.scss",
+        "components/_reset.scss",
+        "components/_header.scss",
+        "components/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}

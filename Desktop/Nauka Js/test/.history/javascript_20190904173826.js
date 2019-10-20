@@ -1,0 +1,4 @@
+const star = '*';
+
+
+for(i=)

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <meta http-equiv=X-UA-Compatible content=ie=edge>
+    <title>Document</title>
+    <link rel=stylesheet href=styles.css>
+
+</head>
+<body>
+        <p>Lorem dolor sit amet consectetur adipisicing elit. Voluptate sequi odit totam. Quod maiores saepe sequi. <span class="tooltip" data-message="I'm a tooltip!!">Illum aspernatur</span> aut voluptatum, sequi quibusdam laudantium? Laborum asperiores consequuntur eum corporis exercitationem debitis.</p>
+
+
+    <script src=javascript.js></script>
+
+    <script>
+    class Tooltip{
+        constructor(element){
+            this.element = element;
+            this.message = element.getAttribute('data-message')
+        }
+        init(){
+            const container = document.createElement('div');
+            container.classList.add('tip')
+            container.textContent = this.message;
+            this.element.appendChild(tip);
+
+            this.element.addEventListener('mouseenter', ()=>{
+                tip.classList.add('active');
+            })
+            this.element.addEventListener('mouseleave', ()=>{
+                tip.classList.remove('active')
+            })
+        }
+    }
+    
+    const tooltip = new Tooltip(document.querySelector('.tooltip'))
+    </script>
+</body>
+</html>

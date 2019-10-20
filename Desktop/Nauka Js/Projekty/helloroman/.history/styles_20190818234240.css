@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255,216,41);
+    position: relative;
+}
+.navbar {
+    display: flex;
+    padding: 20px 5%;
+    justify-content: space-between;
+
+}
+.desktop__item a{
+    transition: color .15s ease-in
+}
+.desktop__item a:hover{
+    color: #659dbd;
+    transition: color .15s ease-in 
+}
+
+.hamburger {
+    border: none;
+    background: none;
+    padding: 20px;
+    display: hidden;
+}
+
+.hamburger__div {
+    position: relative;
+    height: 2px;
+    width: 24px;
+    background-color: white;
+    transition: all 0.4 ease;
+    display: hidden;
+}
+.hamburger__div::after,
+.hamburger__div::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 2px;
+    width: 24px;
+    background-color: white;
+    transition: all 0.4 ease
+}
+.hamburger__div::after {
+    background-color: white;
+    top: -6px;
+}
+.hamburger__div::before {
+    background-color: white;
+    top: 6px;
+}
+
+.hamburger__overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #444;
+    opacity: 1;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.25s ease
+}
+
+.hamburger__overlay--toggle {
+    width: 100%;
+}
+
+.hamburger__overlay > button{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background: none;
+    padding: 20px;
+    border: none;
+    font-size: 2em
+}
+span{
+
+}
+li {
+    list-style: none;
+    font-size: 2em;
+    margin: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.desktop{
+    display: flex;
+}
+.desktop__item{
+    font-size: 1.5em
+}
+.phone{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .phone{
+        display: block
+    }
+    .desktop{
+        display: none
+    }
+}
+
+.grid{
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 100px 50px;
+    /* grid-template-rows: auto; */
+    /* grid-gap: 1000px; */
+}
+
+
+.item {
+    margin: 100px 50px;
+    border: 2px solid white;
+    display: grid;
+    min-height: 400px;
+    grid-template-rows: 100px 1fr; 
+}   
+    .item__header {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 20px 30px;
+    }
+    
+    .item__content {
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .item__title {
+      margin: 0;
+      color: #171717;
+      font-size: 21px;
+    }
+    
+    .itme__paragraph, .item__button {
+      font-size: 14px;
+    }
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px ,1fr));
+    height: 500px;
+    background-color: #444444;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    
+}

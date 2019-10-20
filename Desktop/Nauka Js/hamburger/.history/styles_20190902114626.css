@@ -1,0 +1,10 @@
+body {
+    background-color: #171717
+}
+
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+}

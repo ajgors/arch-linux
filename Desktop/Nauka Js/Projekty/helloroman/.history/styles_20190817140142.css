@@ -1,0 +1,53 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 5%;
+    align-items: center
+}
+
+.hamburger{
+    border: none;
+    background: none;
+    padding: 15px;
+}
+.hamburger__div{
+    position: relative;
+    height: 2px;
+    width: 24px;
+    background-color: white;
+}
+.hamburger__div::after,
+.hamburger__div::before{
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 2px;
+    width: 24px;
+    background-color: white;
+}
+.hamburger__div::after{
+    top: -6px
+}
+.hamburger__div::before{
+    top: 6px
+}
+
+.hamburger__overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    
+}

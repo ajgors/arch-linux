@@ -1,0 +1,6 @@
+function mixed(text){
+
+}
+
+
+text = 

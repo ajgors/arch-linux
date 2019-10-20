@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header__title{
+    text-align: center;
+    margin:  20px auto;
+    font-size: 4em;
+}
+
+.result{
+    background-color: #eee;
+}
+.result__paragraph{
+    text-align: center;
+    padding: 30px;
+    font-size: 2em
+}
+.result__span{
+    font-size: 3em;
+    padding: 15px;
+}

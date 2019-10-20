@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+        <div class="container my-5">
+                <h2>Recipes</h2>
+                <ul>
+                </ul>
+                <form>
+                  <label for="recipe">Add a new recipe:</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="recipe" required>
+                    <div class="input-group-append">
+                      <input type="submit" value="add" class="btn btn-outline-secondary">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            
+
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWVtGUdWCbuKgia4YtNDQD1e3eeObvQBE",
+    authDomain: "my-project-a56f1.firebaseapp.com",
+    databaseURL: "https://my-project-a56f1.firebaseio.com",
+    projectId: "my-project-a56f1",
+    storageBucket: "my-project-a56f1.appspot.com",
+    messagingSenderId: "683672001516",
+    appId: "1:683672001516:web:6731fbff3a663efc"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore() 
+</script>
+<script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const addDorm = document.querySelector('.add');
